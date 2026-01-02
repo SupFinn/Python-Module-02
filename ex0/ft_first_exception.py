@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-def check_temperature(temp_str):
+def check_temperature(temp_str: str):
     try:
         value = int(temp_str)
         if value >= 0 and value <= 40:
@@ -15,22 +15,20 @@ def check_temperature(temp_str):
     return None
 
 
-def test_temperature_input():
+if __name__ == "__main__":
+
     print("=== Garden Temperature Checker ===")
-    
+
     print("\nTesting temperature: 25")
     check_temperature("25")
-    
+
     print("\nTesting temperature: abc")
     check_temperature("abc")
-    
+
     print("\nTesting temperature: 100")
     check_temperature("100")
-    
+
     print("\nTesting temperature: -50")
     check_temperature("-50")
-    
-    print("\nAll tests completed - program didn't crash!")
 
-if __name__ == "__main__":
-    test_temperature_input()
+    print("\nAll tests completed - program didn't crash!")
