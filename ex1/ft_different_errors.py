@@ -24,7 +24,7 @@ def garden_operations(mode: str):
             data = {"rose": 5}
             value = data["sunflower"]
         except KeyError:
-            print("Caught KeyError: 'missing_plant'")
+            print("Caught KeyError: 'missing\\_plant'")
 
     elif mode == "multiple":
         try:
