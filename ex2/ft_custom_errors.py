@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 class GardenError(Exception):
     pass
 
