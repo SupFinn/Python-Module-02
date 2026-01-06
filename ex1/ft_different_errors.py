@@ -9,7 +9,7 @@ def garden_operations(mode: str):
 
     elif mode == "zero":
         try:
-            result = 10 / 0
+            10 / 0
         except ZeroDivisionError:
             print("Caught ZeroDivisionError: division by zero")
 
@@ -22,7 +22,7 @@ def garden_operations(mode: str):
     elif mode == "key":
         try:
             data = {"rose": 5}
-            value = data["sunflower"]
+            data["sunflower"]
         except KeyError:
             print("Caught KeyError: 'missing\\_plant'")
 
@@ -56,4 +56,4 @@ def test_error_types():
 
 
 if __name__ == "__main__":
-    test_error_types() 
+    test_error_types()
